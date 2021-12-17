@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motor - Nurul Afidah</title>
+  <style>
+    #tempataGambarMotor {
+
+    }
+  </style>
+</head>
+<body>
+  
+  <h1 id="namaMotor"></h1>
+  <button id="printGambarMotor" onclick="tampilkanGambar()"></button>
+  <div id="tempatGambarMotor"></div>
+
+  <button onclick="klakson()">Klakson</button>
+  <p id="bunyiKlakson">....</p>
+  
+  <script>
+    document.getElementById('namaMotor').innerText = 'Beat';
+    document.getElementById('printGambarMotor').innerText = 'Print Gambar Motor';
+    
+    function klakson() {
+        document.getElementById('bunyiKlakson').innerHTML = 'tin tin tin';
+    }
+
+    // Deklarasi
+    function tampilkanGambar() {
+      // isi
+      document.getElementById('tempatGambarMotor').innerHTML = '<img src="https://awsimages.detik.net.id/community/media/visual/2021/07/14/honda-beat-warna-baru.jpeg?w=700&q=90">';
+    }
+
+  </script>
+</body>
+</html>
